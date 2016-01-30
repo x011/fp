@@ -11,13 +11,14 @@
 
 <link rel="stylesheet" href="themes/android-theme.css" />
 <script type="text/javascript">
-var DEBUG_ANDROID_THEME=true
+var DEBUG_ANDROID_THEME=false
 </script>
 <script type="text/javascript" src="jquery.mobile.android-theme.js"></script>
 
 </head> 
 <body> 
 	<div data-role="page">
+	<div id="cover"></div>
 		<div data-role="header" data-position="fixed" data-theme="b">
 
 			<h1>Flash Player Tutorial</h1>
@@ -55,5 +56,11 @@ function googleTranslateElementInit() {
 			<h4>android.com.de/flash</h4>
 		</div><!-- /footer -->
 	</div><!-- /page -->
+	<script>
+	$(window).load(function(){
+    $('#cover').fadeOut(1000);
+    
+});
+</script>
 </body>
 </html>
